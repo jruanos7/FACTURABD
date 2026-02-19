@@ -20,24 +20,39 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <form method="post">
-        Ingrese fecha
-        <input type="date" name="fecha" required>
-        <br><br>
-        Ingrese total
-        <input type="text" name="total" required>
-        <br><br>
+<body class="bg-dark text-dark">
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="bg-white p-4 shadow rounded ms-3">
 
-        <input type="submit" value="Ingresar">
 
-    </form>
+            <h1>Venta</h1>
+            <form method="post">
+                Ingrese fecha
+                <input type="date" name="fecha" required>
+                <br><br>
+                Ingrese total
+                <input type="text" name="total" required>
+                <br><br>
 
-    <a href="Menu.php"> <button>Salir</button> </a>
-    <br><br>
+                <input class="btn btn-info mb-1" type="submit" value="Ingresar">
 
+            </form>
+
+
+            <a href="Menu.php"> <button class="btn btn-danger">Salir</button> </a>
+            <br><br>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -18,12 +18,14 @@
 
 
 
-            <h1>BIENVENIDO</h1>
-            <a href="Cliente.php"> <button>Cliente</button></a>
-            <br>
-            <a href="Producto.php"> <button>Producto</button></a>
-            <br>
-            <a href="Venta.php"> <button>Venta</button></a>
+            <h1 class="mb-5 container d-flex justify-content-center align-items-center">BIENVENIDO</h1>
+            <div class="d-grid gap-0.5 d-flex justify-content-center">
+                <a href="Cliente.php"> <button class="btn bg-warning mx-2">Cliente</button></a>
+                <br>
+                <a href="Producto.php"> <button class="btn bg-danger mx-2">Producto</button></a>
+                <br>
+                <a href="Venta.php"> <button class="btn btn-info mx-2">Venta</button></a>
+            </div>
         </div>
     </div>
 
