@@ -34,9 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <input type="submit" value="Ingresar">
 
     </form>
-    <a href="Principal.php">
-        <button>Salir</button>
-        <br><br>
+
+    <a href="Menu.php"> <button>Salir</button> </a>
+    <br><br>
+
 </body>
 
 </html>

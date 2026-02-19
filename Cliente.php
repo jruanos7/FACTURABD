@@ -38,11 +38,8 @@
             <input type="submit" value="Ingresar">
         </form>
 
-        <a href="Menu.php">
-            <button>Salir</button>
-        </a>
-
-        <br>
+        <a href="Menu.php"> <button>Salir</button> </a>
+        <br><br>
 
     </body>
 
