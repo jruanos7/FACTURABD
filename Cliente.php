@@ -21,25 +21,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cliente</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     </head>
 
-    <body>
-        <form method="POST">
-            Ingrese nombre
-            <input type="text" name="name" required>
-            <br><br>
-            Ingrese direccion
-            <input type="text" name="adress" required>
-            <br><br>
-            Ingrese Nit
-            <input type="text" name="id" required>
-            <br><br>
+    <body class="bg-dark text-dark">
+        <div class="d-flex vh-100 justify-content-center align-items-center">
+            <div class="bg-white p-4 shadow rounded ms-3">
 
-            <input type="submit" value="Ingresar">
-        </form>
+                <h1 class="mb-3">Cliente</h1>
 
-        <a href="Menu.php"> <button>Salir</button> </a>
-        <br><br>
+                <form method="POST">
+                    Ingrese nombre
+                    <input type="text" name="name" required>
+                    <br><br>
+                    Ingrese direccion
+                    <input type="text" name="adress" required>
+                    <br><br>
+                    Ingrese Nit
+                    <input type="text" name="id" required>
+                    <br><br>
+
+                    <input class="btn btn-info mb-1" type="submit" value="Ingresar">
+                </form>
+
+                <a href="Menu.php"> <button class="btn btn-danger">Salir</button> </a>
+                <br><br>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 

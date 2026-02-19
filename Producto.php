@@ -21,29 +21,45 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 
-<body>
-    <form method="post">
-        Ingrese nombre
-        <input type="text" name="name" required>
-        <br><br>
-        Ingrese descripcion
-        <input type="text" name="description" required>
-        <br><br>
-        Ingrese precio
-        <input type="text" name="price" required>
-        <br><br>
-        Ingrese cantidad
-        <input type="number" name="quantity" required>
-        <br><br>
+<body class="bg-dark text-dark">
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="bg-white p-4 shadow rounded ms-3">
 
-        <input type="submit" value="Ingresar">
+            <h1 class="mb-3">Producto</h1>
 
-    </form>
+            <form method="post">
+                Ingrese nombre
+                <input type="text" name="name" required>
+                <br><br>
+                Ingrese descripcion
+                <input type="text" name="description" required>
+                <br><br>
+                Ingrese precio
+                <input type="text" name="price" required>
+                <br><br>
+                Ingrese cantidad
+                <input type="number" name="quantity" required>
+                <br><br>
 
-    <a href="Menu.php"> <button>Salir</button> </a>
-    <br><br>
+                <input class="btn btn-info mb-1" type="submit" value="Ingresar">
+
+            </form>
+
+            <a href="Menu.php"> <button class="btn btn-danger">Salir</button> </a>
+            <br><br>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
